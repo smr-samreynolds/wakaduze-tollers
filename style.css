@@ -9,10 +9,15 @@ featured-light - #F9F3EF
 /* Color Variables */
 
 :root {
-    --light: #F0F1EE;
-    --dark: #3D4228;
-    --featured-light: #F9F3EF;
-    --featured-dark: #BC7E55;
+    --bg-light: #F0F1EE;
+    --bg-dark: #3D4228;
+    --bg-accent: #B7B7A4;
+    --bg-featured-light: #F9F3EF;
+    --bg-featured-dark: #BC7E55;
+    --light-text: #F0F1EE;
+    --dark-text: #3D4228;
+    --featured-text-light:  #F9F3EF;
+    --featured-text-dark: #BC7E55;
     --sans-serif: 'Roboto', sans-serif;
     --cursive: 'Forum', cursive;   
 }
@@ -122,16 +127,17 @@ flip-flex-alternate:nth-child(even) {
 
 
 /* Background & Background Images ---------- */
-.dark { background-color: var(--dark);}
-.light { background-color: var(--light); }
-.featured-dark { background-color: var(--featured-dark);}
-.featured-light { background-color: var(--featured-light);}
+.dark { background-color: var(--bg-dark);}
+.light { background-color: var(--bg-light); }
+.featured-dark { background-color: var(--bg-featured-dark);}
+.featured-light { background-color: var(--bg-featured-light);}
+.accent { background-color: var(--bg-accent);}
 /* .bg-medium
 .bg-light
 .bg-v-light */
 
 .bg-image {
-    background-color: var(--featured-dark); 
+    background-color: var(--bg-featured-dark); 
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
@@ -173,7 +179,7 @@ flip-flex-alternate:nth-child(even) {
 } 
   
 .bg-overlay-featured::after { 
-    background-color: var(--featured);
+    background-color: var(--bg-featured-dark);
     opacity: 0.5;
 }
 
@@ -224,6 +230,7 @@ body {
   font-family: var(--sans-serif);
   color: var(--dark-text);
 }
+
 
 h2, h3, h4, h5, h6 {
   line-height: 1.1;
@@ -319,6 +326,7 @@ nav a:hover {
 .logo {
   text-decoration: none;
   font-size: 2.5rem;
+  font-family: var(--cursive);
 } 
 
 
@@ -383,13 +391,13 @@ footer a:hover {
   
 /* Styles when the hamburger button is active  */
 .hamburger-button.active {
-    color: white;
+    color: var(--featured-text-light);
 }
   
   
 .mobile-menu {
     display: none; 
-    background-color: var(--featured);
+    background-color: var(--bg-featured-dark);
     padding: 5%;
     position: fixed; 
     z-index:3;
@@ -402,7 +410,7 @@ footer a:hover {
   
 .mobile-menu a {
     text-decoration: none; 
-    color: inherit; 
+    color: var(--featured-text-light); 
     padding: 2%;
     display: block;
     font-weight: normal;
