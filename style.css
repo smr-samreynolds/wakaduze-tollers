@@ -142,6 +142,7 @@ section { position: relative; }
     background-position: center; 
     background-repeat: no-repeat;
     background-image: url('https://source.unsplash.com/8Ogfqvw15Rg/1600x1600');
+    
 }
 
 
@@ -185,7 +186,9 @@ section { position: relative; }
 }
 
 /* Images */
-.toller-1{ background-image: url("/images/toller-1.jpg");}
+.toller-1 { background-image: url("/images/toller-1.jpg");}
+.toller-2 { background-image: url("/images/toller-2.jpg");} 
+.toller-4 { background-image: url("/images/toller-4.jpg");} 
 
 /* Responsive video */
 .embed-container {
@@ -267,7 +270,8 @@ p:last-child {
 
 /* Unique Typography Styles  */
 .emphasis       { font-size: 1.2rem; }
-.featured-text  { color: var(--featured-text);} /* change this and the one below */
+.featured-text-light  { color: var(--featured-text-light);}
+.featured-text-dark  { color: var(--featured-text-dark);} /* change this and the one below */
 .light-text     { color: var(--light-text);}
 .subtle         { opacity: 0.8;     }
 .subtitle       { font-size: 0.8rem; }
@@ -477,6 +481,9 @@ footer a:hover {
 
 @media(max-width:48em) {
   
+  html { font-size: 12px;}
+  p {font-size: 1.1rem; }
+
   .show-sm { display: block; }
   .hide-sm { display: none;  }
 
@@ -498,9 +505,8 @@ footer a:hover {
   .sm-portrait      { padding-bottom: 125%; }
   .sm-square        { padding-bottom: 100%; }
 
-  flip-flex-alternate:nth-child(even) {
-    flex-direction: row-reverse;
-  }
+  .flex-flip-sm { flex-direction: column-reverse; }
+ 
 }
 
 /* ------- XS Media Query (36em / 576px) --------------- */ 
@@ -515,21 +521,9 @@ footer a:hover {
       font-weight: 300;
       font-family: var(--sans-serif); 
     }
-    .bg-overlay::after {
-      z-index: 1;
-      content: ""; 
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0,0,0,0.5);
+
+  .flex-flip-sm { flex-direction: column-reverse; }   
   }
-     
-  flip-flex-alternate:nth-child(even) {
-    flex-direction: row-reverse;
-  }
-}
 
 /* Section-specific styles */
 
