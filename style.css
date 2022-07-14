@@ -47,9 +47,9 @@ section { position: relative; }
 .capped-width-narrow    { max-width: 1000px; margin: auto; }
 .capped-width-v-narrow  { max-width: 800px;  margin: auto; }
 
-flip-flex-alternate:nth-child(even) {
+/* flip-flex-alternate:nth-child(even) {
   flex-direction: row-reverse;
-}
+} */
 
 
 /* Container Height ---------- */
@@ -144,6 +144,7 @@ flip-flex-alternate:nth-child(even) {
     background-image: url('https://source.unsplash.com/8Ogfqvw15Rg/1600x1600');
 }
 
+
 .banner { 
     background-image: url('https://source.unsplash.com/8Ogfqvw15Rg/1600x1600'); 
     background-size: cover;
@@ -154,7 +155,7 @@ flip-flex-alternate:nth-child(even) {
 
 
 /* Background Overlays */
-/* .bg-overlay::after {
+.bg-overlay::after {
     z-index: 1;
     content: ""; 
     position: absolute;
@@ -169,7 +170,7 @@ flip-flex-alternate:nth-child(even) {
 .bg-overlay > * {
     z-index: 2;
     position: relative;
-} */
+}
 
 
 /* Add a second class to change the color or style  */
@@ -183,9 +184,8 @@ flip-flex-alternate:nth-child(even) {
     opacity: 0.5;
 }
 
-.profile-image {
-  border-radius: 100%
-}
+/* Images */
+.toller-1{ background-image: url("/images/toller-1.jpg");}
 
 /* Responsive video */
 .embed-container {
@@ -231,6 +231,10 @@ body {
   color: var(--dark-text);
 }
 
+h1 {
+  font-size: 7rem;
+  font-family: var(--cursive);
+}
 
 h2, h3, h4, h5, h6 {
   line-height: 1.1;
@@ -472,7 +476,7 @@ footer a:hover {
 
 
 @media(max-width:48em) {
-
+  
   .show-sm { display: block; }
   .hide-sm { display: none;  }
 
@@ -494,7 +498,9 @@ footer a:hover {
   .sm-portrait      { padding-bottom: 125%; }
   .sm-square        { padding-bottom: 100%; }
 
-  
+  flip-flex-alternate:nth-child(even) {
+    flex-direction: row-reverse;
+  }
 }
 
 /* ------- XS Media Query (36em / 576px) --------------- */ 
@@ -519,19 +525,9 @@ footer a:hover {
       height: 100%;
       background-color: rgba(0,0,0,0.5);
   }
-    
-    
-  .bg-overlay > * {
-      z-index: 2;
-      position: relative;
-  }
-  .banner-sm {
-      background-image: url('/images/plant.jpg'); 
-      background-size: cover;
-      background-position: center; 
-      background-repeat: no-repeat;
-      background-position: 60% 43%;
-      color: white;
+     
+  flip-flex-alternate:nth-child(even) {
+    flex-direction: row-reverse;
   }
 }
 
