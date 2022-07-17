@@ -209,7 +209,7 @@ section { position: relative; }
 
 a.bg-image { display: block;} 
 
-.landscape     { padding-bottom: 66% ; }
+.landscape     { padding-bottom: 29% ; }
 .portrait-tall { padding-bottom: 175%; }
 .portrait      { padding-bottom: 125%; }
 .square        { padding-bottom: 100%; }
@@ -494,9 +494,14 @@ footer a:hover {
   .sm-padded     { padding: 5%; }
   .sm-padded-1   { padding: 1rem; }
   .sm-padded-05  { padding: 0.5rem; }
-
+  
+  .sm-padded-t   { padding: 5%; }
   .sm-padded-t-0 { padding-top: 0; }
   .sm-padded-b-0 { padding-bottom: 0; }
+  
+  .sm-padded-l-0 { padding-left: 0; }
+  .sm-padded-r-0 { padding-right: 0; }
+  
   .sm-margin-t-0 { margin-top: 0; }
   .sm-margin-b-0 { margin-bottom: 0; }
 
@@ -506,7 +511,7 @@ footer a:hover {
   .sm-square        { padding-bottom: 100%; }
 
   .flex-flip-sm { flex-direction: column-reverse; }
- 
+  .landscape     { padding-bottom: 66% ; }
 }
 
 /* ------- XS Media Query (36em / 576px) --------------- */ 
