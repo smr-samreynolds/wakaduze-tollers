@@ -544,7 +544,9 @@ footer a:hover {
 
   .flex-flip-sm { flex-direction: column-reverse; }   
   }
-
+  .flex-flip-alternate:nth-child(even) {
+    flex-direction: column-reverse;
+  }
 
 /* Section-specific styles */
 
