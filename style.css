@@ -202,6 +202,8 @@ section { position: relative; }
 }  
 .toller-11 { background-image: url("/images/toller-11.jpg");}
 .toller-12 { background-image: url("/images/toller-12.jpg");}  
+.toller-13 { background-image: url("/images/toller-13.jpg");}  
+
 
 /* Responsive video */
 .embed-container {
@@ -296,7 +298,7 @@ a {
 }
 
 a:hover {
-  color: var(--featured-text); 
+  color: var(--featured-text-light); 
 }
 
 p a {
@@ -305,7 +307,7 @@ p a {
 }
 
 p a:hover { 
-  color: var(--featured-text); 
+  color: var(--featured-text-light); 
 }
 
 .button { 
@@ -341,7 +343,7 @@ nav a {
     text-decoration: none;
 }
 nav a:hover {
-  color: var(--light);
+  color: var(--featured-text-light);
 }
 
 .logo {
@@ -359,7 +361,7 @@ footer {
 }
 
 footer a:hover {
-    color: var(--light);
+    color: var(--featured-text-dark);
 }
 
 /* Dropdown styles */
@@ -552,3 +554,8 @@ footer a:hover {
 }
 
 
+/* Icon Grid */
+.big-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
