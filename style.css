@@ -32,6 +32,8 @@ featured-light - #F9F3EF
 
 img { max-width: 100%; height: auto;}
 
+html { scroll-behavior: smooth;}
+
 /* Override default gridlex padding */ 
 [class*=col] { padding: 0; }
 [class*=grid] { margin: 0; }
@@ -136,7 +138,8 @@ section { position: relative; }
 .bg-light
 .bg-v-light */
 
-.bg-image {
+.bg-image,
+[class*=bg-image] {
     background-color: var(--bg-featured-dark); 
     background-size: cover;
     background-position: center; 
@@ -187,8 +190,18 @@ section { position: relative; }
 
 /* Images */
 .toller-1 { background-image: url("/images/toller-1.jpg");}
-.toller-2 { background-image: url("/images/toller-2.jpg");} 
+.toller-2 { background-image: url("/images/toller-2.jpg");}
+.toller-3 { background-image: url("/images/toller-3.jpg");}  
 .toller-4 { background-image: url("/images/toller-4.jpg");} 
+.toller-5 { background-image: url("/images/toller-5.jpg");} 
+.toller-6 { background-image: url("/images/toller-6.jpg");} 
+.toller-7 { background-image: url("/images/toller-7.jpg");} 
+.toller-8 { background-image: url("/images/toller-8.jpg");}
+.toller-9 { background-image: url("/images/toller-9.jpg");} 
+.toller-10 { background-image: url("/images/toller-10.jpg");
+}  
+.toller-11 { background-image: url("/images/toller-11.jpg");}
+.toller-12 { background-image: url("/images/toller-12.jpg");}  
 
 /* Responsive video */
 .embed-container {
@@ -530,8 +543,12 @@ footer a:hover {
   .flex-flip-sm { flex-direction: column-reverse; }   
   }
 
+
 /* Section-specific styles */
 
-
+/* Popup Gallery Section */
+.gallery [class*="col-"] {
+  padding: 0.5%;
+}
 
 
